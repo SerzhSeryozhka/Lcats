@@ -7,7 +7,7 @@
 <body>
 <div th:each="cats : ${koty}">
     <p>
-        Имя: <span th:text="${cats.name}"/> цвет: <span th:text="${cats.color}"/> Возраст: <span th:text="${cats.age}"/>
+        Имя: <span th:text="${cats.name}"></span>, цвет: <span th:text="${cats.color}"></span>, возраст: <span th:text="${cats.age}"></span>
     </p>
 </div>
 </body>

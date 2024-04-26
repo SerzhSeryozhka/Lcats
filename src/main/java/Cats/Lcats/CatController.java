@@ -32,7 +32,7 @@ public class CatController {
                 }
             }
         } catch (FileNotFoundException e) {
-            return null; // Возвращаем null если файл не найден
+            return "Такого файла нет или путь неправильный"; // Возвращаем null если файл не найден
         }
         model.addAttribute("koty",cats);
         return "cats";
